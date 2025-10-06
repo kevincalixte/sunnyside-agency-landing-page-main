@@ -56,6 +56,11 @@ section:nth-child(6) {}
     padding: 3rem;
 }
 
+h4{
+    text-align: center;
+    margin-top: 4rem;
+}
+
 #articles {
     display: flex;
     flex-direction: column;
@@ -71,29 +76,28 @@ section:nth-child(6) {}
     margin: 0 auto;
 }
 
-#articles article{
+#articles article {
     display: flex;
     flex-direction: column;
     gap: 2rem;
 }
 
-#articles span{
+#articles span {
     display: block;
     margin-top: .5rem;
 }
 
-#pictures img{
-    width: 45%;
-    /* height: 100%; */
+#pictures img {
+    width: 50%;
 }
-#pictures{
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    outline: 2px red solid;
+
+#pictures {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* FOOTER */
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,18 +106,96 @@ footer{
     padding: 4rem;
 }
 
-footer .logo{
+footer .logo {
     color: #2D7567;
 }
 
-footer nav ul{
+footer nav ul {
     display: flex;
     gap: 2rem;
     color: #2D7567;
 }
 
-footer .socials{
+footer .socials {
     display: flex;
     gap: 2rem;
 }
-@media screen and (min-width: 375px) {}
+
+@media screen and (min-width: 375px) {
+
+    #hero {
+        background-image: url(../img/desktop/image-header.jpg);
+    }
+
+    .hero-burger {
+        display: none;
+    }
+
+    #hero nav {
+        display: flex;
+    }
+
+    #hero nav ul {
+        display: flex;
+        gap: 3rem;
+        color: white;
+    }
+
+    #hero nav ul li:last-child {
+        background-color: white;
+        color: black;
+        padding: .5rem 1.5rem;
+        border-radius: 2rem;
+    }
+
+    #boxs {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 45vw;
+    }
+
+    section:nth-child(2),
+    section:nth-child(4) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+        text-align: left;
+    }
+
+    section:nth-child(2) {
+        order: -1;
+    }
+
+    section:nth-child(1) {
+        content: url(../img/desktop/image-transform.jpg)
+    }
+    section:nth-child(3) {
+        content: url(../img/desktop/image-stand-out.jpg)
+    }
+    section:nth-child(5) img{
+        content: url(../img/desktop/image-graphic-design.jpg)
+    }
+    section:nth-child(6) img {
+        content: url(../img/desktop/image-photography.jpg)
+    }
+    
+
+    #articles{
+        flex-direction: row;
+        justify-content: center;
+       padding: 3rem 8rem 8rem 3rem;
+    }
+
+    #pictures{
+        flex-wrap: nowrap;
+    }
+}
+
+
+
+
