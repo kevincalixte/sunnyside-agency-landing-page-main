@@ -1,7 +1,7 @@
 /* FONT */
 @font-face {
     font-family: 'Barlow';
-    src: url();
+    src: url(../font/);
 }
 
 /* HERO */
@@ -9,7 +9,6 @@
     background-image: url(../img/mobile/image-header.jpg);
     background-size: cover;
     height: 70vh;
-    ;
 }
 
 .hero-text {
@@ -43,9 +42,6 @@ section:nth-child(4) {
     padding: 3rem 2rem;
 }
 
-section:nth-child(5),
-section:nth-child(6) {}
-
 .box {
     position: relative;
 }
@@ -56,7 +52,7 @@ section:nth-child(6) {}
     padding: 3rem;
 }
 
-h4{
+h4 {
     text-align: center;
     margin-top: 4rem;
 }
@@ -125,6 +121,7 @@ footer .socials {
 
     #hero {
         background-image: url(../img/desktop/image-header.jpg);
+        background-position: center;
     }
 
     .hero-burger {
@@ -137,65 +134,68 @@ footer .socials {
 
     #hero nav ul {
         display: flex;
-        gap: 3rem;
+        gap: 1.5rem;
         color: white;
+    }
+
+    #hero nav ul li {
+        padding: .5rem 1.5rem;
     }
 
     #hero nav ul li:last-child {
         background-color: white;
         color: black;
-        padding: .5rem 1.5rem;
         border-radius: 2rem;
+    }
+
+    .box {
+        width: 50%;
+    }
+    .box img{
+        width: 100%;
     }
 
     #boxs {
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .box {
-        width: 45vw;
-    }
-
-    section:nth-child(2),
-    section:nth-child(4) {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 3rem;
-        text-align: left;
+        align-items: center;
     }
 
     section:nth-child(2) {
         order: -1;
     }
 
-    section:nth-child(1) {
-        content: url(../img/desktop/image-transform.jpg)
+    section:nth-child(2),
+    section:nth-child(4) {
+        padding: 0;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
     }
-    section:nth-child(3) {
-        content: url(../img/desktop/image-stand-out.jpg)
-    }
-    section:nth-child(5) img{
-        content: url(../img/desktop/image-graphic-design.jpg)
-    }
-    section:nth-child(6) img {
-        content: url(../img/desktop/image-photography.jpg)
-    }
-    
 
-    #articles{
+    section:nth-child(1) {
+        content: url(../img/desktop/image-transform.jpg);
+    }
+
+    section:nth-child(3) {
+        content: url(../img/desktop/image-stand-out.jpg);
+    }
+
+    section:nth-child(5) img {
+        content: url(../img/desktop/image-graphic-design.jpg);
+    }
+
+    section:nth-child(6) img {
+        content: url(../img/desktop/image-photography.jpg);
+    }
+
+    #articles {
         flex-direction: row;
         justify-content: center;
-       padding: 3rem 8rem 8rem 3rem;
+        padding: 3rem 8rem 8rem 3rem;
     }
 
-    #pictures{
+    #pictures {
         flex-wrap: nowrap;
     }
 }
-
-
-
-
